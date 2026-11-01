@@ -4,6 +4,8 @@
  */
 
 import { CatInfo } from '../types';
+import blueCatImage from '../assets/cats/blue.jpeg';
+import milkCatImage from '../assets/cats/milk.jpeg';
 
 export const CAT_PROFILES: Record<'blue' | 'milk', CatInfo> = {
   blue: {
@@ -12,7 +14,7 @@ export const CAT_PROFILES: Record<'blue' | 'milk', CatInfo> = {
     breed: 'British Shorthair (Silver / Grey Shaded)',
     role: 'Chief Button Operator',
     furTone: 'grey',
-    image: '/assets/aistudio/WhatsApp_Image_2026-09-28_at_19.21.35_30fef511.jpeg',
+    image: blueCatImage,
     personality: 'Laser-eyed grey beauty. Perches attentively and strikes the button with surgical precision.',
     luckyQuote: 'Calculating the 6 luckiest non-duplicate numbers from 1 to 49!',
   },
@@ -22,7 +24,7 @@ export const CAT_PROFILES: Record<'blue' | 'milk', CatInfo> = {
     breed: 'Exotic Shorthair (Cream / Ginger Tabby)',
     role: 'Master Tumbler Slapper',
     furTone: 'cream',
-    image: '/assets/aistudio/IMG_3187.JPG_a400102b.jpeg',
+    image: milkCatImage,
     personality: 'Chubby cheeks with a delicate bell collar. Slams the button with royal fluffy paw energy.',
     luckyQuote: 'Full-body pounce activated for the 6 winning lottery balls!',
   },
