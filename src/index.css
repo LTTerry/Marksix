@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Outfit', system-ui, sans-serif;
+  }
+
+  .font-mono-nums {
+    font-family: 'Space Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes tumblerSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes airCyclone {
+  0% { transform: rotate(0deg) scale(0.9); opacity: 0.3; }
+  50% { transform: rotate(180deg) scale(1.05); opacity: 0.7; }
+  100% { transform: rotate(360deg) scale(0.9); opacity: 0.3; }
+}
+
+@keyframes sparkleGlint {
+  0%, 100% { opacity: 0; transform: scale(0.4) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1.2) rotate(90deg); }
+}
+
+@keyframes goldSheen {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes floatBob {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(4deg); }
+}
+
+@keyframes buttonGlow {
+  0%, 100% { box-shadow: 0 0 18px rgba(239, 68, 68, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.5); }
+  50% { box-shadow: 0 0 38px rgba(239, 68, 68, 0.95), inset 0 2px 8px rgba(255, 255, 255, 0.8); }
+}
+
+@keyframes ringChaser {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-tumbler {
+  animation: tumblerSpin 3.5s linear infinite;
+}
+
+.animate-air-cyclone {
+  animation: airCyclone 2s ease-in-out infinite;
+}
+
+.animate-glow-button {
+  animation: buttonGlow 2s ease-in-out infinite;
+}
+
+.animate-ring-chaser {
+  animation: ringChaser 6s linear infinite;
+}
+
+/* 3D Glass Tumbler Drum */
+.drum-glass {
+  background: radial-gradient(circle at 50% 28%, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.04) 55%, rgba(15, 23, 42, 0.8) 100%);
+  box-shadow: inset 0 0 50px rgba(56, 189, 248, 0.15), inset 0 0 20px rgba(255, 255, 255, 0.2), 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+}
+
+/* High-End 3D Luxury Sphere Specular Lighting */
+.lotto-ball-3d {
+  position: relative;
+  box-shadow: 
+    inset -5px -6px 12px rgba(0, 0, 0, 0.65),
+    inset 4px 5px 8px rgba(255, 255, 255, 0.5),
+    0 8px 18px -4px rgba(0, 0, 0, 0.7),
+    0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.lotto-ball-glint {
+  background: radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.5) 22%, rgba(255, 255, 255, 0) 58%);
+}
+
+/* Gold Metallic Beveled Border */
+.gold-foil-rim {
+  border: 2px solid transparent;
+  background: linear-gradient(135deg, #FFE873, #D4AF37, #996515, #F5E050) border-box;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+/* Central Number Medallion: Mother-of-pearl / Porcelain disk */
+.number-disk {
+  background: radial-gradient(circle at 35% 35%, #FFFFFF 0%, #F1F5F9 70%, #E2E8F0 100%);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(255, 255, 255, 0.5);
+}

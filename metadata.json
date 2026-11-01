@@ -1,0 +1,8 @@
+{
+  "name": "Feline Fortune - 7-Number Cat Lottery",
+  "description": "Interactive seven-number lottery draw game powered by animated cat paw triggers, bouncing tumbler balls, and lucky ticket verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
